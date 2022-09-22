@@ -41,7 +41,7 @@ class MyCanvas extends JComponent {
             }
         }
 
-        System.out.println("rcount: "+rcount+" bcount: "+bcount);
+        System.out.println("Red: "+rcount+" Blue: "+bcount);
 
     }
     public MyCanvas() {
