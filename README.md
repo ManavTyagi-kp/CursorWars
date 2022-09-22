@@ -5,7 +5,7 @@
 So, before you go ahead, I just want you to know that this game or whatever it is, is a result of a few drinks and a little nerdy brain. 
 This game has no logical sense whatsoever, but still I had a great time playing it with my friends and I just wanted to share.
 
-#Requirements:
+# Requirements:
 <!-- BADGES/ -->
   - All you need is a decent syatem, with a running JAVA IDE like IntelliJ, Eclipse, etc.
   - And two mouses connected to the same computer.
