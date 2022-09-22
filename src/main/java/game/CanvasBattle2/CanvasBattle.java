@@ -1,4 +1,4 @@
-package click;
+package game.CanvasBattle2;
 
 import java.awt.*;
 import javax.swing.*;
@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Random;
 
 class MyCanvasBattle extends JComponent {
-
-    HashMap<Integer, String> map = new HashMap<Integer, String>(225);
 
 
     int busercount = 0;
@@ -74,17 +72,14 @@ public class CanvasBattle extends JFrame{
 
         window.setVisible(true);
 
-        ActionListener taskPerformer = new ActionListener() {
-
-            public void actionPerformed(ActionEvent evt) {
-                //What should the timer do?
-                count++;
-                if(count>30) {
-                    timer.stop();
-                    window.dispose();
-                }
-                //System.out.println(count);
+        ActionListener taskPerformer = evt -> {
+            //What should the timer do?
+            count++;
+            if(count>30) {
+                timer.stop();
+                window.dispose();
             }
+            //System.out.println(count);
         };
         timer = new Timer(1000, taskPerformer);
 

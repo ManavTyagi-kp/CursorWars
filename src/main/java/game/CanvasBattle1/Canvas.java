@@ -1,3 +1,5 @@
+package game.CanvasBattle1;
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
@@ -6,7 +8,7 @@ import java.util.Random;
 
 class MyCanvas extends JComponent {
 
-    HashMap<Integer, String> map = new HashMap<Integer, String>(225);
+    HashMap<Integer, String> map = new HashMap<>(225);
 
 
     int busercount = 0;
@@ -49,11 +51,11 @@ class MyCanvas extends JComponent {
                 int yEnd = getHeight()/15;
                 int x = me.getX()/xEnd;
                 int y = me.getY()/yEnd;
-                if(map.get((x*xEnd)+(y*yEnd))=="blue") {
+                if(map.get((x*xEnd)+(y*yEnd)).equals("blue")) {
                     map.put((x*xEnd)+(y*yEnd), "white");
                     busercount += 1;
                 }
-                else if(map.get((x*xEnd)+(y*yEnd)) == "red") {
+                else if(map.get((x*xEnd)+(y*yEnd)).equals("red")) {
                     map.put((x*xEnd)+(y*yEnd), "white");
                     rusercount += 1;
                 }
@@ -93,15 +95,12 @@ class MyCanvas extends JComponent {
 
         window.setVisible(true);
 
-        ActionListener taskPerformer = new ActionListener() {
-
-            public void actionPerformed(ActionEvent evt) {
-                //What should the timer do?
-                count++;
-                if(count>45) {
-                    timer.stop();
-                    window.dispose();
-                }
+        ActionListener taskPerformer = evt -> {
+            //What should the timer do?
+            count++;
+            if(count>45) {
+                timer.stop();
+                window.dispose();
             }
         };
         timer = new Timer(1000, taskPerformer);
