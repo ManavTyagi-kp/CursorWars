@@ -4,10 +4,11 @@ So, before you go ahead, I just want you to know that this game or whatever it i
 This game has no logical sense whatsoever, but still I had a great time playing it with my friends and I just wanted to share.
 
 Requirements:
-
-  ##All you need is a decent syatem, with a running JAVA IDE like IntelliJ, Eclipse, etc.
-  ##And two mouses connected to the same computer.
-  ##So, if you have a laptop and a mouse, you can use the track pad, and the mosue to play this game.
+<!-- BADGES/ -->
+  All you need is a decent syatem, with a running JAVA IDE like IntelliJ, Eclipse, etc.
+  And two mouses connected to the same computer.
+  So, if you have a laptop and a mouse, you can use the track pad, and the mosue to play this game.
+<!-- BADGES/ -->
  
  Yes, this game is based on the absurdity that you face when two devices try to move the cursor at the same time. 
 
